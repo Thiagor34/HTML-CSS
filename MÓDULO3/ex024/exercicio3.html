@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            margin: 5px;
+        }
+        th, td {
+            border: 1.5px solid black;
+            padding: 2px;
+        }
+        th {
+            background-color: rgb(89, 118, 174);
+            color: white;
+            width: 100px;
+            padding: 4px;        
+        }
+        th.final, td.letra {
+            text-align: left;            
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <thead>
+
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
+        </tr>
+        <tr>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+        </tr>
+        <tr>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td class="letra">Matemática</td>
+            <td>8,00</td>
+            <td>8,50</td>
+            <td>8,25</td>
+        </tr>
+        <tr>
+            <td class="letra">Física</td>
+            <td>7,50</td>
+            <td>8,00</td>
+            <td>7,75</td>
+        </tr>
+        <tr>
+            <td class="letra">Química</td>
+            <td>7,00</td>
+            <td>7,00</td>
+            <td>7,00</td>
+        </tr>
+        <tr>
+            <td class="letra">Biologia</td>
+            <td>6,50</td>
+            <td>7,50</td>
+            <td>7,00</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="final" scope="row">Média de Exatas</th>
+            <th>7,50</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup">Humanas</th>
+            <td class="letra">História</td>
+            <td>9,00</td>
+            <td>10,00</td>
+            <td>9,50</td>
+        </tr>
+        <tr>
+            <td class="letra">Geografia</td>
+            <td>7,00</td>
+            <td>7,00</td>
+            <td>7,00</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="final" scope="row">Média Humanas</th>
+            <th>8,25</th>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
